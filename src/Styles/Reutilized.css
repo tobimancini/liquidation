@@ -1,0 +1,266 @@
+/*Containers*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    width: 100%;
+    animation: fadeIn 2s forwards;
+    padding: 0 15%;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
+}
+
+.formContainer{
+    border: solid 3px #843EDF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+}
+
+/*Margin & padding*/
+
+.marginXSmall {
+    margin: 0 3px;
+}
+
+.marginXRegular {
+    margin: 0 10px;
+}
+
+.marginYSmall{
+    margin: 3px 0;
+}
+
+.marginYRegular{
+    margin: 10px 0;
+}
+
+.marginYTitle{
+    margin-bottom: 40px;
+}
+
+.marginYSubtitle{
+    margin-bottom: 25px;
+}
+
+.marginXBtn{
+    margin-right: 8px;
+}
+
+.marginYBtn{
+    margin-bottom: 40px;
+}
+
+.marginYBox{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*FLEXBOX*/
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.centerCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.startCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.selfEnd{
+    align-self: flex-end;
+}
+
+/******STYLES******/
+
+/**FORMS**/
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.label{
+    align-self: flex-start;
+    width: auto;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    transform: translateY(12px);
+    background-color: #fff;
+    z-index: 2;
+}
+
+.input{
+    width: 300px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    background-color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    resize: none;
+}
+
+.input:focus-visible{
+    outline: #55DF91 auto 1px;
+}
+
+/**TEXT**/
+
+.title{
+    color: #261240;
+    font-size: 25px;
+}
+
+.title2{
+    color: #261240;
+    font-size: 22px;
+}
+
+.subtitle{
+    color: #514F4F;
+    font-size: 16px;
+}
+
+
+
+/*COLORS*/
+
+.purpleBg {
+    background-color: #843EDF;
+}
+
+.purpleText {
+    color: #843EDF;
+}
+
+.grayText {
+    color: #514F4F;
+}
+
+.orangeText {
+    color: #FF9747;
+}
+
+
+/*BUTTONS*/
+
+.btn {
+    font-size: 16px;
+    border-radius: 35px;
+    font-weight: 500;
+    border: solid 2px;
+    cursor: pointer;
+    padding: 3px 20px;
+    text-decoration: none;
+    transition: all 50ms ease-in-out;
+}
+
+.btn.xl{
+    padding:3px 40px ;
+}
+
+.btnNoBg {
+    color: #55DF91;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 50ms ease-in-out;
+}
+
+.plus{
+    margin: 0 5px;
+}
+
+.btnNoBg:hover{
+    color: #47FF97;
+}
+
+.btnPurple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #391B60;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+}
+
+.btnPurple.active{
+    color: #fff;
+    background-color: #391B60;
+    border-color: #391B60;
+    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+}
+
+.btnPurple:hover {
+    color: #fff;
+    background-color: #843EDF;
+    border-color: #843EDF;
+}
+
+.btnOrange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #FF9747;
+    border-color: #FF9747;
+}
+
+/*TABLES*/
+
+.table {
+    border: solid 2px #843EDF;
+    border-radius: 3px;
+    border-spacing: 0;
+    width: 100%;
+    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+}
+
+.table th{
+    color: #261240;
+}
+
+.table td{
+    color: #514F4F;
+}
+
+.table th,
+.table td {
+    border: 1px solid #e7e5e5;
+    padding: 5px 7px;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
