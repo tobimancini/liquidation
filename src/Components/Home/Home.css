@@ -19,7 +19,11 @@
 }
 
 .homeTextContainer {
-    width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logoAndText{
@@ -33,10 +37,7 @@
 .homeTitle {
     text-align: end;
     font-size: 75px;
-    font-weight: 700;
-}
-
-.homeTitle span{
+    font-weight: 500;
     color: #391B60;
 }
 
@@ -56,20 +57,24 @@
     color: #fff;
     background-color: #391B60;
     padding: 3px 15px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: start;
     display: flex;
     font-size: 20px;
     align-items: center;
 }
 
-.qqLogo {
-    height: 25px;
-    margin-left: 10px;
+.homeTitle span{
+    font-weight: 900;
+}
+
+.custechLogo {
+    height: 70px;
+    margin-top: 10px;
 }
 
 .lotopng {
-    height: 150px;
+    height: 350px;
     margin: 10px;
 }
 

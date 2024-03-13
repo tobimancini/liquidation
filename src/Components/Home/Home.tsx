@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Home.css';
 import '../../Styles/Reutilized.css'
-import Header from '../Header/Header';
-import { LoginModal } from '../Login/LoginModal';
 
 const Home = () => {
 
@@ -10,26 +8,22 @@ const Home = () => {
         <div className='homeContainer'>
             <div className='homeMainBanner'>
                 <div className='homeTextContainer'>
-                    <div className='logoAndText'>
-                        <img className='lotopng' src="../../../loto.png" alt="" />
-                        <div>
-                            <h1 className='homeTitle purpleText'>
-                                SIMPLE.
-                            </h1>
-                            <h1 className='homeTitle purpleText'>
-                                PRÁCTICA.
-                            </h1>
+                    <div>
+                        <h1 className='homeTitle'>
+                            SIMPLE.
+                        </h1>
+                        <h1 className='homeTitle'>
+                            PRÁCTICA.
+                        </h1>
+                        <h1 className='homeTitle'>
+                            A <span className='purpleText'>TU</span> MEDIDA.
+                        </h1>
+                        <div className='homeSubtitleContainer'>
+                            <p className='homeSubtitle'>Plataforma para gestionar comisiones.</p>
+
                         </div>
                     </div>
-                    <h1 className='homeTitle purpleText'>
-                        A <span>TU</span> MEDIDA.
-                    </h1>
-                    <div className='homeSubtitleContainer'>
-                        <p className='homeSubtitle'>Plataforma para gestionar comisiones.
-                            {/* <img className='qqLogo' src='../../../custechLogo.png' /> */}
-                        </p>
-
-                    </div>
+                    <img className='lotopng' src="../../../silueta.png" alt="" />
                 </div>
             </div>
         </div>

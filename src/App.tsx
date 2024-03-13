@@ -9,6 +9,9 @@ import { UserProvider } from './Context/UserContext';
 import CrearAsesor from './Components/Administration/Crear/CrearAsesor';
 import CrearCliente from './Components/Administration/Crear/CrearCliente';
 import Footer from './Components/Footer/Footer';
+import Periodos from './Components/Periodos/Periodos';
+import Periodo from './Components/Periodos/Periodo';
+import Liquidaciones from './Components/Liquidaciones/Liquidaciones';
 
 function App() {
   const [loginModal, setLoginModal] = useState(false)
@@ -32,7 +35,9 @@ function App() {
             element={<Administration />} />
           <Route path="administracion/asesores/crear" element={<CrearAsesor />} />
           <Route path="administracion/clientes/crear" element={<CrearCliente />} />
-          {/* <Route path="data" element={<Data />} /> */}
+          <Route path="periodos" element={<Periodos />} />
+          <Route path="periodos/:empresa" element={<Periodo />} />
+          <Route path="liquidaciones" element={<Liquidaciones />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
         <Footer />

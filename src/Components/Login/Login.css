@@ -14,7 +14,7 @@
 
 .loginModalContainer {
     background-color: #f6f9fc;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 3% 5%;
     position: relative;
     overflow: hidden;
@@ -27,6 +27,12 @@
     right: 10px;
     font-size: 20px;
     z-index: 1;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #f6f9fc;
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
 }
 
 .loginTitleSection{
@@ -41,21 +47,16 @@
 }
 
 .loginModalTitle{
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.loginModalSubtitle{
-    font-size: 40px ;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: 600;
+    color: #391B60;
 }
 
 .loginLogo{
     position: absolute;
-    top: -13%;
-    right: -13%;
-    height: 230px;
-    opacity: 0.8;
+    top: -2%;
+    right: -12%;
+    height: 180px;
     z-index: 0;
 }
 

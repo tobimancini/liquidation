@@ -15,7 +15,28 @@ const Table: FC<TableProps> = ({ headers }) => {
                     })
                 }
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr>
+                    {headers.map((header, index)=> {
+                        return <td key={header+index}>{header}</td>
+                    })}
+                </tr>
+                <tr>
+                    {headers.map((header, index)=> {
+                        return <td key={header+index}>{header}</td>
+                    })}
+                </tr>
+                <tr>
+                    {headers.map((header, index)=> {
+                        return <td key={header+index}>{header}</td>
+                    })}
+                </tr>
+                <tr>
+                    {headers.map((header, index)=> {
+                        return <td key={header+index}>{header}</td>
+                    })}
+                </tr>
+            </tbody>
         </table>
     )
 }

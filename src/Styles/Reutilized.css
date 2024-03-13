@@ -1,26 +1,26 @@
 /*Containers*/
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 60px;
     width: 100%;
     animation: fadeIn 2s forwards;
-    padding: 0 15%;
+    padding: 70px 15%;
     box-sizing: border-box;
     min-height: calc(100vh - 60px);
 }
 
-.formContainer{
-    border: solid 3px #843EDF;
+.formContainer {
     display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px;
     padding-bottom: 25px;
-    border-radius: 3px;
+    border-radius: 5px;
     flex-wrap: wrap;
 }
 
@@ -34,31 +34,31 @@
     margin: 0 10px;
 }
 
-.marginYSmall{
+.marginYSmall {
     margin: 3px 0;
 }
 
-.marginYRegular{
+.marginYRegular {
     margin: 10px 0;
 }
 
-.marginYTitle{
+.marginYTitle {
     margin-bottom: 40px;
 }
 
-.marginYSubtitle{
+.marginYSubtitle {
     margin-bottom: 25px;
 }
 
-.marginXBtn{
+.marginXBtn {
     margin-right: 8px;
 }
 
-.marginYBtn{
+.marginYBtn {
     margin-bottom: 40px;
 }
 
-.marginYBox{
+.marginYBox {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -74,7 +74,7 @@
     flex-direction: column;
 }
 
-.flexRow{
+.flexRow {
     display: flex;
     flex-direction: row;
 }
@@ -89,21 +89,29 @@
     align-items: center;
 }
 
-.selfEnd{
+.selfEnd {
     align-self: flex-end;
 }
 
 /******STYLES******/
 
 /**FORMS**/
-.inputContainer{
+.inputContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5px 20px;
 }
 
-.label{
+.inputContainer.sm{
+    margin: 0;
+}
+
+.inputContainer.lg{
+    margin: 5px 0 40px 0;
+}
+
+.label {
     align-self: flex-start;
     width: auto;
     font-weight: 600;
@@ -112,13 +120,13 @@
     text-align: center;
     margin-left: 10px;
     transform: translateY(12px);
-    background-color: #fff;
+    background-color: #fff9;
     z-index: 2;
 }
 
-.input{
+.input {
     width: 300px;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px 15px;
     padding-top: 15px;
     margin-bottom: 0px;
@@ -128,27 +136,35 @@
     align-items: center;
     z-index: 1;
     resize: none;
+    border: solid 1px #e7e5e5;
 }
 
-.input:focus-visible{
+.input:focus-visible {
     outline: #55DF91 auto 1px;
+}
+
+.input.sm{
+    width: 200px;
+    text-align: center;
 }
 
 /**TEXT**/
 
-.title{
+.title {
     color: #261240;
     font-size: 25px;
 }
 
-.title2{
+.title2 {
     color: #261240;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.subtitle{
-    color: #514F4F;
+.subtitle {
+    color: #515151;
     font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -174,19 +190,27 @@
 
 /*BUTTONS*/
 
+.btnsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .btn {
     font-size: 16px;
     border-radius: 35px;
     font-weight: 500;
     border: solid 2px;
     cursor: pointer;
-    padding: 3px 20px;
+    min-width: 150px;
+    padding: 3px 30px;
     text-decoration: none;
     transition: all 50ms ease-in-out;
 }
 
-.btn.xl{
-    padding:3px 40px ;
+.btn.xl {
+    padding: 3px 40px;
 }
 
 .btnNoBg {
@@ -198,32 +222,51 @@
     transition: all 50ms ease-in-out;
 }
 
-.plus{
+.btnNoBg.forInput{
+    padding: 25px 0 0 25px;
+}
+
+.plus {
     margin: 0 5px;
 }
 
-.btnNoBg:hover{
+.btnNoBg:hover {
     color: #47FF97;
 }
 
-.btnPurple {
+.btnPurple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #391B60;
+    border-color: #391B60;
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
+}
+
+.btnPurple:hover{
+    background-color: #843EDF;
+    border-color: #843EDF;
+}
+
+.btnWhite {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #391B60;
     background-color: #fff;
     border-color: #fff;
-    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
 }
 
-.btnPurple.active{
+.btnWhite.active {
     color: #fff;
     background-color: #391B60;
     border-color: #391B60;
-    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
 }
 
-.btnPurple:hover {
+.btnWhite:hover {
     color: #fff;
     background-color: #843EDF;
     border-color: #843EDF;
@@ -241,26 +284,37 @@
 /*TABLES*/
 
 .table {
-    border: solid 2px #843EDF;
-    border-radius: 3px;
+    position: relative;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
     border-spacing: 0;
     width: 100%;
-    box-shadow: 0 12px 5px -12px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 5px -12px rgba(0, 0, 0, 0.1);
 }
 
-.table th{
-    color: #261240;
+.table th {
+    background-color: #391B60;
+    color: #fff;
 }
 
-.table td{
+.table td {
     color: #514F4F;
+}
+
+.tr{
+    border: 1px solid #e7e5e5;
 }
 
 .table th,
 .table td {
-    border: 1px solid #e7e5e5;
-    padding: 5px 7px;
-    text-align: center;
+    padding: 10px 0 10px 25px;
+    text-align: start;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }

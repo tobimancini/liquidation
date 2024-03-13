@@ -32,7 +32,7 @@ export const LoginModal: FC<LoginModalProps> = ({ onVisible, closeModal }) => {
                         <FontAwesomeIcon icon={faXmark} className='exitIcon' onClick={closeModal} />
                         <div className='loginTitleSection'>
                             <div className='loginTitles'>
-                                <h2 className='loginModalSubtitle purpleText'>Bienvenido/a!</h2>
+                                <h2 className='loginModalTitle'>Bienvenido/a!</h2>
                             </div>
                             <img className='loginLogo' src="../../custechLogo.png" alt="qqLogin" />
                         </div>
@@ -50,6 +50,7 @@ export const LoginModal: FC<LoginModalProps> = ({ onVisible, closeModal }) => {
                                         <input className="input" type="text" name="surname" id="surname" />
                                     </div>
                                     <div className='inputContainer'>
+                                        <label className="label" htmlFor="empresas">Compañía</label>
                                         <select className='input' name="empresas" id="selectEmpresas">
                                             <option value="">Seleccione su empresa</option>
                                             {
@@ -78,8 +79,8 @@ export const LoginModal: FC<LoginModalProps> = ({ onVisible, closeModal }) => {
                                 }
                             </div>
                             <div className='logRegisterBtns'>
-                                <button className='btn btnPurple marginXSmall' onClick={() => setModalStatus('login')} type='button'>Inicia sesión</button>
-                                <button className='btn btnPurple marginXSmall' onClick={() => setModalStatus('register')} type='button'>Crea tu cuenta</button>
+                                <button className='btn btnWhite marginXSmall' onClick={() => setModalStatus('login')} type='button'>Inicia sesión</button>
+                                <button className='btn btnWhite marginXSmall' onClick={() => setModalStatus('register')} type='button'>Crea tu cuenta</button>
                             </div>
                         </form>
                     </div>
